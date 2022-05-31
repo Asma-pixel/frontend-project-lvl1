@@ -4,6 +4,7 @@ jobs:
   check-lint:
     runs-on: ubuntu-latest
     steps:
+    -run: npm install --save eslint-config-airbnb
     - run: npm install eslint-config-airbnb-base
     - name: Checkout code
       uses: actions/checkout@v2
