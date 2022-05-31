@@ -4,7 +4,5 @@ jobs:
   check-lint:
     runs-on: ubuntu-latest
     steps:
-      - name: Check eslint output
-        uses: actions/checkout@v2
-      - run: make lint .
+      - run: make lint
       
