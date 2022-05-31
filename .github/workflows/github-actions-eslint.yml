@@ -12,13 +12,8 @@ jobs:
         node-version: [14.x]
 
     steps:
-        # Check-out repository under GitHub workspace
-        # https://github.com/actions/checkout
-      - uses: actions/checkout@v2
-        # Step's name
-      - name: Use Node.js ${{ matrix.node-version }}
-        # Configures the node version used on GitHub-hosted runners
-        # https://github.com/actions/setup-node
-      - run: make install
-      - run: make lint
+      - name: "Installing pakages"     
+        run: make install
+      - name: "Check linter pakages"   
+        run: make lint
      
