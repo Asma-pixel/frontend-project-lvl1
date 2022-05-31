@@ -4,5 +4,7 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-      - run: make lint
+    - uses: actions/checkout@v2
+    - name: "GitHub Actions for esLint"
+    - run: make lint
       
