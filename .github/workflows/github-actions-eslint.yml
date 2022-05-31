@@ -1,15 +1,21 @@
 name: GitHub Actions for checking eslint output
 on: [push]
 jobs:
+  
   check-lint:
     runs-on: ubuntu-latest
-    steps:
-    - run: npm install eslint
-    - run: npm install --save eslint-config-airbnb
-    - run: npm install eslint-config-airbnb-base
-    - run: npm install eslint-plugin-import
-    - name: Checkout code
-      uses: actions/checkout@v2
-    - name: Run Linter
-      run: make lint
+    strategy:
+        # Node versions list
+        matrix:
+          node-version: [14.x]
+    steps: 
+     - uses: actions/checkout@v2
+        # Step's name
+     - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v2
+        # The Node.js version to configure
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'npm'
+        - run: make lint
       
