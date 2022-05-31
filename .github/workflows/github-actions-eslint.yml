@@ -4,8 +4,9 @@ jobs:
   check-lint:
     runs-on: ubuntu-latest
     steps:
-    -run: npm install --save eslint-config-airbnb
+    - run: npm install --save eslint-config-airbnb
     - run: npm install eslint-config-airbnb-base
+    - run: npm install eslint-plugin-import
     - name: Checkout code
       uses: actions/checkout@v2
     - name: Run Linter
