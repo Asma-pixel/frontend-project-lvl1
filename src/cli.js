@@ -6,7 +6,7 @@ const getName = () => {
 };
 
 const usrGreeting = () => {
-  const name = getName();
+     const name = getName();
   const greeting = `Hello, ${name}!`;
   return greeting;
 };
