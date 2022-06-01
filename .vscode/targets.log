@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Wed Jun  1 14:38:44 2022
+# Make data base, printed on Wed Jun  1 17:59:34 2022
 
 # Variables
 
@@ -23,9 +23,9 @@ SSH_AGENT_LAUNCHER = gnome-keyring
 # environment
 SNAP_INSTANCE_KEY = 
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-331c527d-e5f2-48f5-a329-5791ff169378.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-827dd7e5-46cb-4bbf-bfbe-050043805662.sock
 # environment
-VSCODE_CWD = /home/seraphim/Рабочий стол/frontend-project-lvl1
+VSCODE_CWD = /home/seraphim/frontend-project-lvl1
 # default
 MAKE_COMMAND := make
 # environment
@@ -41,13 +41,13 @@ VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # default
 .VARIABLES := 
 # environment
-PWD = /home/seraphim/Рабочий стол/frontend-project-lvl1
+PWD = /home/seraphim/frontend-project-lvl1
 # automatic
 %D = $(patsubst %/,%,$(dir $%))
 # environment
 XDG_DATA_DIRS = /usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
 # environment
-OLDPWD = /home/seraphim/Рабочий стол
+OLDPWD = /home/seraphim
 # automatic
 ^D = $(patsubst %/,%,$(dir $^))
 # environment
@@ -65,11 +65,11 @@ XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.IHJ2M1
 # default
 .INCLUDE_DIRS = /usr/local/include /usr/include /usr/include
 # environment
-GNOME_TERMINAL_SERVICE = :1.139
+GNOME_TERMINAL_SERVICE = :1.1121
 # makefile
 MAKEFLAGS = pqrR
 # makefile
-CURDIR := /home/seraphim/Рабочий стол/frontend-project-lvl1
+CURDIR := /home/seraphim/frontend-project-lvl1
 # environment
 VSCODE_PIPE_LOGGING = true
 # environment
@@ -101,7 +101,7 @@ SNAP_REEXEC =
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 4348
+VSCODE_PID = 21542
 # environment
 XDG_SESSION_TYPE = wayland
 # automatic
@@ -131,7 +131,7 @@ XMODIFIERS = @im=ibus
 # environment
 SHLVL = 1
 # environment
-GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/b79a5c0e_c4f4_4241_b96e_8d398ae106de
+GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/3c88be21_112b_430c_b546_1c45b30b35f4
 # environment
 MAKELEVEL := 0
 # default
@@ -257,9 +257,9 @@ SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd
 
 # Directories
 
-# . (device 2052, inode 8655311): 14 files, no impossibilities.
+# . (device 2052, inode 8667609): 15 files, no impossibilities.
 
-# 14 files, no impossibilities in 1 directories.
+# 15 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -279,13 +279,13 @@ lint:
 #  Modification time never checked.
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 8):
-	npx eslint .
+	npx eslint --fix.
 
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
  
-#  Last modified 2022-05-30 23:23:20.400438743
+#  Last modified 2022-06-01 17:55:31.716286996
 #  File has been updated.
 #  Successfully updated.
 
@@ -324,12 +324,12 @@ install:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 23 / storage = 210 B / avg = 9 B
-# current buf: size = 8162 B / used = 210 B / count = 23 / avg = 9 B
+# strcache buffers: 1 (0) / strings = 24 / storage = 221 B / avg = 9 B
+# current buf: size = 8162 B / used = 221 B / count = 24 / avg = 9 B
 
-# strcache performance: lookups = 31 / hit rate = 25%
+# strcache performance: lookups = 32 / hit rate = 25%
 # hash-table stats:
-# Load=23/8192=0%, Rehash=0, Collisions=0/31=0%
-# Finished Make data base on Wed Jun  1 14:38:44 2022
+# Load=24/8192=0%, Rehash=0, Collisions=0/32=0%
+# Finished Make data base on Wed Jun  1 17:59:34 2022
 
  
