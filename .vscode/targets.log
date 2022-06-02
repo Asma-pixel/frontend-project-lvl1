@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Wed Jun  1 17:59:34 2022
+# Make data base, printed on Thu Jun  2 13:47:10 2022
 
 # Variables
 
@@ -23,7 +23,7 @@ SSH_AGENT_LAUNCHER = gnome-keyring
 # environment
 SNAP_INSTANCE_KEY = 
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-827dd7e5-46cb-4bbf-bfbe-050043805662.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-73674637-bdc9-4767-aeaf-fb54c1b5b9de.sock
 # environment
 VSCODE_CWD = /home/seraphim/frontend-project-lvl1
 # default
@@ -59,13 +59,13 @@ VSCODE_CODE_CACHE_PATH = /home/seraphim/.config/Code/CachedData/c3511e6c69bb3901
 # environment
 LANG = C
 # environment
-XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.IHJ2M1
+XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.D6KAN1
 # default
 .LOADED := 
 # default
 .INCLUDE_DIRS = /usr/local/include /usr/include /usr/include
 # environment
-GNOME_TERMINAL_SERVICE = :1.1121
+GNOME_TERMINAL_SERVICE = :1.162
 # makefile
 MAKEFLAGS = pqrR
 # makefile
@@ -73,7 +73,7 @@ CURDIR := /home/seraphim/frontend-project-lvl1
 # environment
 VSCODE_PIPE_LOGGING = true
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # environment
 LESSOPEN = | /usr/bin/lesspipe %s
 # automatic
@@ -101,13 +101,13 @@ SNAP_REEXEC =
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 21542
+VSCODE_PID = 4470
 # environment
 XDG_SESSION_TYPE = wayland
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # environment
-SESSION_MANAGER = local/seraphim-MS-7B24:@/tmp/.ICE-unix/1151,unix/seraphim-MS-7B24:/tmp/.ICE-unix/1151
+SESSION_MANAGER = local/seraphim-MS-7B24:@/tmp/.ICE-unix/1190,unix/seraphim-MS-7B24:/tmp/.ICE-unix/1190
 # automatic
 *F = $(notdir $*)
 # environment
@@ -131,7 +131,7 @@ XMODIFIERS = @im=ibus
 # environment
 SHLVL = 1
 # environment
-GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/3c88be21_112b_430c_b546_1c45b30b35f4
+GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/a397487a_9a4c_499f_b7f8_dbe9c6fdba89
 # environment
 MAKELEVEL := 0
 # default
@@ -179,9 +179,10 @@ LOGNAME = seraphim
 # environment
 SNAP_ARCH = amd64
 # makefile
+ 
 .DEFAULT_GOAL := install
 # environment
-SYSTEMD_EXEC_PID = 1178
+SYSTEMD_EXEC_PID = 1232
 # environment
 DISPLAY = :0
 # environment
@@ -284,7 +285,6 @@ lint:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
- 
 #  Last modified 2022-06-01 17:55:31.716286996
 #  File has been updated.
 #  Successfully updated.
@@ -330,6 +330,6 @@ install:
 # strcache performance: lookups = 32 / hit rate = 25%
 # hash-table stats:
 # Load=24/8192=0%, Rehash=0, Collisions=0/32=0%
-# Finished Make data base on Wed Jun  1 17:59:34 2022
+# Finished Make data base on Thu Jun  2 13:47:10 2022
 
  
