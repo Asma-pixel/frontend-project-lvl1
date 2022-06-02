@@ -1,8 +1,9 @@
 import gameLogics from '../index.js';
 import getRandomNumber from '../randomNumber.js';
 
+const limit = 100;
 const getRandomOperator = () => {
-  const operatorQualifier = getRandomNumber();
+  const operatorQualifier = getRandomNumber(limit);
   let operator = '';
 
   if (operatorQualifier <= 33) operator = '+';
@@ -14,9 +15,9 @@ const getRandomOperator = () => {
 
 const getQuestionWithAnswer = () => {
   const arrQuestionAnswer = [2];
-  const firstNumber = getRandomNumber();
-  const secondNumber = getRandomNumber();
-  const operator = getRandomOperator();
+  const firstNumber = getRandomNumber(limit);
+  const secondNumber = getRandomNumber(limit);
+  const operator = getRandomOperator(limit);
   const expression = `${firstNumber} ${operator} ${secondNumber}`;
 
   arrQuestionAnswer[0] = expression;

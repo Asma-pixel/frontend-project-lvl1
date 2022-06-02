@@ -2,9 +2,10 @@ import gameLogics from '../index.js';
 import getRandomNumber from '../randomNumber.js';
 
 const getQuestionWithAnswer = () => {
+  const limit = 100;
   const arrQuestionAnswer = [2];
-  let firstNumber = getRandomNumber();
-  let secondNumber = getRandomNumber();
+  let firstNumber = getRandomNumber(limit);
+  let secondNumber = getRandomNumber(limit);
   const question = `${firstNumber} ${secondNumber}`;
   arrQuestionAnswer[0] = question;
 
