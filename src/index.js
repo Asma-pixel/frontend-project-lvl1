@@ -4,10 +4,9 @@ console.log('Welcome to the Brain Games!');
 const name = readlineSync.question('May i get your name? ');
 console.log(`Hello, ${name}`);
 
-
 const gameLogics = (getQuestionWithAnswer, description) => {
   console.log(description);
-  
+
   for (let i = 0; i < 3; i += 1) {
     const arrQuestionAnswer = getQuestionWithAnswer();
     const question = arrQuestionAnswer[0];
@@ -16,7 +15,7 @@ const gameLogics = (getQuestionWithAnswer, description) => {
     console.log('Question: ', question);
     const userAnswer = readlineSync.question('Your answer: ');
 
-    if (userAnswer == rightAnswer) {
+    if (userAnswer.toString() === rightAnswer.toString()) {
       console.log('Correct!');
     } else {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${rightAnswer}'`);
@@ -26,5 +25,5 @@ const gameLogics = (getQuestionWithAnswer, description) => {
   }
 
   console.log(`Congratulations, ${name}!`);
-} 
+};
 export default gameLogics;

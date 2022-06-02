@@ -1,5 +1,5 @@
-import gameLogics  from  "../index.js";
-import getRandomNumber from "../randomNumber.js";
+import gameLogics from '../index.js';
+import getRandomNumber from '../randomNumber.js';
 
 const getRandomOperator = () => {
   const operatorQualifier = getRandomNumber();
@@ -10,22 +10,29 @@ const getRandomOperator = () => {
   else operator = '-';
 
   return operator;
-}
+};
 
 const getQuestionWithAnswer = () => {
   const arrQuestionAnswer = [2];
-  const firstNumber = getRandomNumber(); 
-  const secondNumber = getRandomNumber(); 
-  const expression = `${firstNumber} ${getRandomOperator()} ${secondNumber}`;
- 
-  arrQuestionAnswer[0] = expression;
-  arrQuestionAnswer[1] = eval(expression);
-  return arrQuestionAnswer;
+  const firstNumber = getRandomNumber();
+  const secondNumber = getRandomNumber();
+  const operator = getRandomOperator();
+  const expression = `${firstNumber} ${operator} ${secondNumber}`;
 
-}
+  arrQuestionAnswer[0] = expression;
+  switch (operator) {
+    case '+': arrQuestionAnswer[1] = firstNumber + secondNumber; break;
+    case '-': arrQuestionAnswer[1] = firstNumber - secondNumber; break;
+    case '*': arrQuestionAnswer[1] = firstNumber * secondNumber; break;
+    default:
+      break;
+  }
+
+  return arrQuestionAnswer;
+};
 
 const calcGame = () => {
-  const description = "What is the result of the expression?";
+  const description = 'What is the result of the expression?';
   gameLogics(getQuestionWithAnswer, description);
-} 
+};
 export default calcGame;
