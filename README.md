@@ -5,8 +5,11 @@
 
 [![Actions Status](https://github.com/Asma-pixel/frontend-project-lvl1/actions/workflows/github-actions-eslint.yml/badge.svg)](https://github.com/Asma-pixel/frontend-project-lvl1/actions)
 
-## Asciema of installing and running brain-even game
+### Asciema of installing and running brain-even game
 [![asciicast](https://asciinema.org/a/Xgt8iG7zRXRe9EWYpKncMOImZ.svg)](https://asciinema.org/a/Xgt8iG7zRXRe9EWYpKncMOImZ)
 
-## Asciema of running brain-calc game
+### Asciema of running brain-calc game
 [![asciicast](https://asciinema.org/a/m7A9vLj9WhAkmfZ6CRuR2wiPX.svg)](https://asciinema.org/a/m7A9vLj9WhAkmfZ6CRuR2wiPX)
+
+### Asciema of running brain-gsd game
+[![asciicast](https://asciinema.org/a/DH6Mvt18U3nKTZcgxVsYVcL5U.svg)](https://asciinema.org/a/DH6Mvt18U3nKTZcgxVsYVcL5U)
