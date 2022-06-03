@@ -11,9 +11,13 @@
 Сlone this repository, 
 Write the `make install` command inside the project in the terminal
 Write `sudo npm link` command in the same place
+
 ---
+
 After executing these commands you will be able to run the games. 
+
 ---
+
 To start the games you need to use the following commands:
 * brain-games
 * brain-even
