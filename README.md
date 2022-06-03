@@ -16,3 +16,6 @@
 
 ### Asciema of running brain-progression game
 [![asciicast](https://asciinema.org/a/SK2kAWAimww9eIy5qZnMoh0Xp.svg)](https://asciinema.org/a/SK2kAWAimww9eIy5qZnMoh0Xp)
+
+### Asciema of running brain-prime game
+[![asciicast](https://asciinema.org/a/jGEsnC9lq7ZElmPyx5ONxCQ7s.svg)](https://asciinema.org/a/jGEsnC9lq7ZElmPyx5ONxCQ7s)
