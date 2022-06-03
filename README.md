@@ -5,6 +5,23 @@
 
 [![Actions Status](https://github.com/Asma-pixel/frontend-project-lvl1/actions/workflows/github-actions-eslint.yml/badge.svg)](https://github.com/Asma-pixel/frontend-project-lvl1/actions)
 
+
+## Instruction of installing
+
+Сlone this repository, 
+Write the `make install` command inside the project in the terminal
+Write `sudo npm link` command in the same place
+---
+After executing these commands you will be able to run the games. 
+---
+To start the games you need to use the following commands:
+* brain-games
+* brain-even
+* brain-calc
+* brain-gcd
+* brain-progression
+* brain-prime
+
 ### Asciema of installing and running brain-even game
 [![asciicast](https://asciinema.org/a/Xgt8iG7zRXRe9EWYpKncMOImZ.svg)](https://asciinema.org/a/Xgt8iG7zRXRe9EWYpKncMOImZ)
 
