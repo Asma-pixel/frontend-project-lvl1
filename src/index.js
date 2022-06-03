@@ -11,7 +11,7 @@ const gameLogics = (getQuestionWithAnswer, description) => {
     const question = arrQuestionAnswer[0];
     const rightAnswer = arrQuestionAnswer[1];
 
-    console.log('Question: ', question);
+    console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');
 
     if (userAnswer.toString() === rightAnswer.toString()) {
