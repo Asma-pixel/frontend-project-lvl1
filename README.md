@@ -20,7 +20,7 @@ Installation steps
 
 ---
 
-After executing these commands you will be able to run the games. 
+**After executing these commands you will be able to run the games.** 
 
 ---
 
