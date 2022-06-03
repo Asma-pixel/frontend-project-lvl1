@@ -19,7 +19,7 @@ const getQuestionWithAnswer = () => {
   }
 
   const answer = arrProgression[indexHiddenMember];
-  arrProgression[indexHiddenMember] = '...';
+  arrProgression[indexHiddenMember] = '..';
   const question = arrProgression.join(' ');
   arrQuestionAnswer[0] = question;
   arrQuestionAnswer[1] = answer;
