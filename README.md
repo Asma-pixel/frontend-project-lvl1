@@ -6,11 +6,17 @@
 [![Actions Status](https://github.com/Asma-pixel/frontend-project-lvl1/actions/workflows/github-actions-eslint.yml/badge.svg)](https://github.com/Asma-pixel/frontend-project-lvl1/actions)
 
 
-## Instruction of installing
+Instruction of installing
+===
 
-Сlone this repository, 
-Write the `make install` command inside the project in the terminal
-Write `sudo npm link` command in the same place
+Installation steps
+---
+
+1. Сlone this repository
+
+2. Write the `make install` command inside the project in the terminal 
+
+3. Write `sudo npm link` command in the same place
 
 ---
 
