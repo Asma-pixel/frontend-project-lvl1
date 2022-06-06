@@ -5,10 +5,11 @@ const getName = () => {
   return name;
 };
 
-const usrGreeting = () => {
+const runUserGreeting = () => {
+  console.log('Welcome to the Brain Games!');
   const name = getName();
   const greeting = `Hello, ${name}!`;
-  return greeting;
+  console.log(greeting);
 };
 
-export default usrGreeting;
+export default runUserGreeting;

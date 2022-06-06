@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Fri Jun  3 12:23:37 2022
+# Make data base, printed on Mon Jun  6 21:36:05 2022
 
 # Variables
 
@@ -23,7 +23,7 @@ SSH_AGENT_LAUNCHER = gnome-keyring
 # environment
 SNAP_INSTANCE_KEY = 
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-252e3423-eeb6-4bc5-8180-14fbaa9701cb.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-ee8cb145-b82b-4b19-ac22-2d11f6e69a9a.sock
 # environment
 VSCODE_CWD = /home/seraphim/frontend-project-lvl1
 # default
@@ -59,13 +59,13 @@ VSCODE_CODE_CACHE_PATH = /home/seraphim/.config/Code/CachedData/c3511e6c69bb3901
 # environment
 LANG = C
 # environment
-XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.MCF9M1
+XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.J15TM1
 # default
 .LOADED := 
 # default
 .INCLUDE_DIRS = /usr/local/include /usr/include /usr/include
 # environment
-GNOME_TERMINAL_SERVICE = :1.161
+GNOME_TERMINAL_SERVICE = :1.338
 # makefile
 MAKEFLAGS = pqrR
 # makefile
@@ -101,13 +101,13 @@ SNAP_REEXEC =
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 4947
+VSCODE_PID = 6445
 # environment
 XDG_SESSION_TYPE = wayland
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # environment
-SESSION_MANAGER = local/seraphim-MS-7B24:@/tmp/.ICE-unix/1184,unix/seraphim-MS-7B24:/tmp/.ICE-unix/1184
+SESSION_MANAGER = local/seraphim-MS-7B24:@/tmp/.ICE-unix/1177,unix/seraphim-MS-7B24:/tmp/.ICE-unix/1177
 # automatic
 *F = $(notdir $*)
 # environment
@@ -131,7 +131,7 @@ XMODIFIERS = @im=ibus
 # environment
 SHLVL = 1
 # environment
-GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/965ae785_1054_47cf_b872_30f1863e7dcd
+GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/06a370e7_ebf4_4d3b_abe8_56bddc3a74fa
 # environment
 MAKELEVEL := 0
 # default
@@ -181,7 +181,7 @@ SNAP_ARCH = amd64
 # makefile
 .DEFAULT_GOAL := install
 # environment
-SYSTEMD_EXEC_PID = 1215
+SYSTEMD_EXEC_PID = 1211
 # environment
 DISPLAY = :0
 # environment
@@ -257,9 +257,9 @@ SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd
 
 # Directories
 
-# . (device 2052, inode 8667609): 14 files, no impossibilities.
+# . (device 2052, inode 8654255): 13 files, no impossibilities.
 
-# 14 files, no impossibilities in 1 directories.
+# 13 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -284,7 +284,7 @@ lint:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-02 19:18:55.64597069
+#  Last modified 2022-06-06 21:35:56.856765908
 #  File has been updated.
 #  Successfully updated.
 
@@ -323,13 +323,12 @@ install:
 
 # No general ('VPATH' variable) search path.
 
- 
-# strcache buffers: 1 (0) / strings = 23 / storage = 210 B / avg = 9 B
-# current buf: size = 8162 B / used = 210 B / count = 23 / avg = 9 B
+# strcache buffers: 1 (0) / strings = 22 / storage = 197 B / avg = 8 B
+# current buf: size = 8162 B / used = 197 B / count = 22 / avg = 8 B
 
-# strcache performance: lookups = 31 / hit rate = 25%
+# strcache performance: lookups = 30 / hit rate = 26%
 # hash-table stats:
-# Load=23/8192=0%, Rehash=0, Collisions=0/31=0%
-# Finished Make data base on Fri Jun  3 12:23:37 2022
+# Load=22/8192=0%, Rehash=0, Collisions=0/30=0%
+# Finished Make data base on Mon Jun  6 21:36:05 2022
 
  

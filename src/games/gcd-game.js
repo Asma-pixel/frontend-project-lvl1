@@ -1,14 +1,7 @@
 import gameLogics from '../index.js';
 import getRandomNumber from '../randomNumber.js';
 
-const getQuestionWithAnswer = () => {
-  const limit = 100;
-  const arrQuestionAnswer = [2];
-  let firstNumber = getRandomNumber(limit);
-  let secondNumber = getRandomNumber(limit);
-  const question = `${firstNumber} ${secondNumber}`;
-  arrQuestionAnswer[0] = question;
-
+const getAnswer = (firstNumber, secondNumber) => {
   while (firstNumber !== 0 && secondNumber !== 0) {
     if (firstNumber > secondNumber) {
       firstNumber %= secondNumber;
@@ -16,8 +9,17 @@ const getQuestionWithAnswer = () => {
       secondNumber %= firstNumber;
     }
   }
-
-  arrQuestionAnswer[1] = firstNumber + secondNumber;
+  const result = firstNumber + secondNumber;
+  return result.toString();
+};
+const getQuestionWithAnswer = () => {
+  const limit = 100;
+  const arrQuestionAnswer = [2];
+  const firstNumber = getRandomNumber(limit);
+  const secondNumber = getRandomNumber(limit);
+  const question = `${firstNumber} ${secondNumber}`;
+  arrQuestionAnswer[0] = question;
+  arrQuestionAnswer[1] = getAnswer(firstNumber, secondNumber);
   return arrQuestionAnswer;
 };
 const gameGcd = () => {

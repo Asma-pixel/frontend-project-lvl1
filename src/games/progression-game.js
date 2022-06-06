@@ -1,6 +1,14 @@
 import gameLogics from '../index.js';
 import getRandomNumber from '../randomNumber.js';
 
+const generateProgression = (a, d, size) => {
+  const progression = [size];
+  progression[0] = a;
+  for (let i = 1; i < size; i += 1) {
+    progression[i] = progression[i - 1] + d;
+  }
+  return progression;
+};
 const getQuestionWithAnswer = () => {
   const arrQuestionAnswer = [2];
 
@@ -11,18 +19,14 @@ const getQuestionWithAnswer = () => {
   const d = getRandomNumber(numLimit);
 
   const quanityMembers = getRandomNumber(quanityLimit) + 5;
-  const arrProgression = [quanityMembers];
+  const arrProgression = generateProgression(a, d, quanityMembers);
   const indexHiddenMember = getRandomNumber(quanityMembers - 1);
-  arrProgression[0] = a;
-  for (let i = 1; i < quanityMembers; i += 1) {
-    arrProgression[i] = arrProgression[i - 1] + d;
-  }
-
+  
   const answer = arrProgression[indexHiddenMember];
   arrProgression[indexHiddenMember] = '..';
   const question = arrProgression.join(' ');
   arrQuestionAnswer[0] = question;
-  arrQuestionAnswer[1] = answer;
+  arrQuestionAnswer[1] = answer.toString();
   return arrQuestionAnswer;
 };
 const progressionGame = () => {

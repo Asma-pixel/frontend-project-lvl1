@@ -1,6 +1,19 @@
 import gameLogics from '../index.js';
 import getRandomNumber from '../randomNumber.js';
 
+const isPrime = (num) => {
+  if (num === 2) {
+    return true;
+  }
+  const largestDivisor = Math.floor(Math.sqrt(num));
+  for (let i = 2; i <= largestDivisor; i += 1) {
+    if (num % i === 0) {
+      return false;
+    }
+  }
+  return true;
+};
+
 const getQuestionWithAnswer = () => {
   const limit = 100;
 
@@ -8,23 +21,8 @@ const getQuestionWithAnswer = () => {
   const question = getRandomNumber(limit) + 1;
   arrQuestionAnswer[0] = question;
 
-  let answer = '';
-  if (question === 2) {
-    answer = 'yes';
-    arrQuestionAnswer[1] = answer;
-    return arrQuestionAnswer;
-  }
-  const largestDivisor = Math.floor(Math.sqrt(question));
-  console.log(largestDivisor);
-  for (let i = 2; i <= largestDivisor; i += 1) {
-    if (question % i === 0) {
-      answer = 'no';
-      arrQuestionAnswer[1] = answer;
-      return arrQuestionAnswer;
-    }
-  }
-  answer = 'yes';
-  arrQuestionAnswer[1] = answer;
+  const answer = isPrime(question) ? 'yes' : 'no';
+  arrQuestionAnswer[1] = answer.toString();
   return arrQuestionAnswer;
 };
 const primeGame = () => {
