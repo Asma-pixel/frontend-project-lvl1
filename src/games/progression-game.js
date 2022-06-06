@@ -21,7 +21,7 @@ const getQuestionWithAnswer = () => {
   const quanityMembers = getRandomNumber(quanityLimit) + 5;
   const arrProgression = generateProgression(a, d, quanityMembers);
   const indexHiddenMember = getRandomNumber(quanityMembers - 1);
-  
+
   const answer = arrProgression[indexHiddenMember];
   arrProgression[indexHiddenMember] = '..';
   const question = arrProgression.join(' ');

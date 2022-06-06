@@ -1,7 +1,9 @@
 import gameLogics from '../index.js';
 import getRandomNumber from '../randomNumber.js';
 
-const getAnswer = (firstNumber, secondNumber) => {
+const getAnswer = (a, b) => {
+  let firstNumber = a;
+  let secondNumber = b;
   while (firstNumber !== 0 && secondNumber !== 0) {
     if (firstNumber > secondNumber) {
       firstNumber %= secondNumber;
