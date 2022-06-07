@@ -1,4 +1,4 @@
-import gameLogics from '../index.js';
+import runGameLogics from '../index.js';
 import getRandomNumber from '../randomNumber.js';
 
 const generateProgression = (a, d, size) => {
@@ -12,15 +12,15 @@ const generateProgression = (a, d, size) => {
 const getQuestionWithAnswer = () => {
   const arrQuestionAnswer = [2];
 
-  const numLimit = 100;
-  const quanityLimit = 5;
+  const maxMemberCount = 10;
+  const minMemberCount = 5;
+  const quanityMembers = getRandomNumber(minMemberCount, maxMemberCount);
 
-  const a = getRandomNumber(numLimit);
-  const d = getRandomNumber(numLimit);
+  const firstMember = getRandomNumber();
+  const delta = getRandomNumber();
 
-  const quanityMembers = getRandomNumber(quanityLimit) + 5;
-  const arrProgression = generateProgression(a, d, quanityMembers);
-  const indexHiddenMember = getRandomNumber(quanityMembers - 1);
+  const arrProgression = generateProgression(firstMember, delta, quanityMembers);
+  const indexHiddenMember = getRandomNumber(1, quanityMembers - 1);
 
   const answer = arrProgression[indexHiddenMember];
   arrProgression[indexHiddenMember] = '..';
@@ -29,8 +29,8 @@ const getQuestionWithAnswer = () => {
   arrQuestionAnswer[1] = answer.toString();
   return arrQuestionAnswer;
 };
-const progressionGame = () => {
+const runProgressionGame = () => {
   const description = 'What number is missing in the progression?';
-  gameLogics(getQuestionWithAnswer, description);
+  runGameLogics(getQuestionWithAnswer, description);
 };
-export default progressionGame;
+export default runProgressionGame;

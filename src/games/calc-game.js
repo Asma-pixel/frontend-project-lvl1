@@ -1,9 +1,12 @@
-import gameLogics from '../index.js';
+import runGameLogics from '../index.js';
 import getRandomNumber from '../randomNumber.js';
 
 const getRandomOperator = () => {
-  const limit = 3;
-  const operatorQualifier = getRandomNumber(limit);
+  const minNumber = 1;
+  const maxNummber = 3;
+
+  const operatorQualifier = getRandomNumber(minNumber, maxNummber);
+  console.log(operatorQualifier);
   let operator = '';
   switch (operatorQualifier) {
     case 1:
@@ -40,11 +43,10 @@ const getAnswer = (firstNumber, secondNumber, operator) => {
 };
 
 const getQuestionWithAnswer = () => {
-  const limit = 100;
   const arrQuestionAnswer = [2];
-  const firstNumber = getRandomNumber(limit);
-  const secondNumber = getRandomNumber(limit);
-  const operator = getRandomOperator(limit);
+  const firstNumber = getRandomNumber();
+  const secondNumber = getRandomNumber();
+  const operator = getRandomOperator();
   const expression = `${firstNumber} ${operator} ${secondNumber}`;
 
   arrQuestionAnswer[0] = expression;
@@ -53,8 +55,8 @@ const getQuestionWithAnswer = () => {
   return arrQuestionAnswer;
 };
 
-const calcGame = () => {
+const runCalcGame = () => {
   const description = 'What is the result of the expression?';
-  gameLogics(getQuestionWithAnswer, description);
+  runGameLogics(getQuestionWithAnswer, description);
 };
-export default calcGame;
+export default runCalcGame;

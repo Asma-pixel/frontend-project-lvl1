@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Mon Jun  6 21:36:05 2022
+# Make data base, printed on Tue Jun  7 18:11:42 2022
 
 # Variables
 
@@ -23,7 +23,7 @@ SSH_AGENT_LAUNCHER = gnome-keyring
 # environment
 SNAP_INSTANCE_KEY = 
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-ee8cb145-b82b-4b19-ac22-2d11f6e69a9a.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-3d184b72-7ece-4d89-bd4b-a2b1c33d5057.sock
 # environment
 VSCODE_CWD = /home/seraphim/frontend-project-lvl1
 # default
@@ -59,13 +59,13 @@ VSCODE_CODE_CACHE_PATH = /home/seraphim/.config/Code/CachedData/c3511e6c69bb3901
 # environment
 LANG = C
 # environment
-XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.J15TM1
+XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.HCYZM1
 # default
 .LOADED := 
 # default
 .INCLUDE_DIRS = /usr/local/include /usr/include /usr/include
 # environment
-GNOME_TERMINAL_SERVICE = :1.338
+GNOME_TERMINAL_SERVICE = :1.158
 # makefile
 MAKEFLAGS = pqrR
 # makefile
@@ -73,7 +73,7 @@ CURDIR := /home/seraphim/frontend-project-lvl1
 # environment
 VSCODE_PIPE_LOGGING = true
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
 # environment
 LESSOPEN = | /usr/bin/lesspipe %s
 # automatic
@@ -101,13 +101,13 @@ SNAP_REEXEC =
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 6445
+VSCODE_PID = 3590
 # environment
 XDG_SESSION_TYPE = wayland
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # environment
-SESSION_MANAGER = local/seraphim-MS-7B24:@/tmp/.ICE-unix/1177,unix/seraphim-MS-7B24:/tmp/.ICE-unix/1177
+SESSION_MANAGER = local/seraphim-MS-7B24:@/tmp/.ICE-unix/1183,unix/seraphim-MS-7B24:/tmp/.ICE-unix/1183
 # automatic
 *F = $(notdir $*)
 # environment
@@ -131,7 +131,7 @@ XMODIFIERS = @im=ibus
 # environment
 SHLVL = 1
 # environment
-GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/06a370e7_ebf4_4d3b_abe8_56bddc3a74fa
+GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/f4097ca9_0316_47dd_ab4c_87d11bb07a3f
 # environment
 MAKELEVEL := 0
 # default
@@ -181,7 +181,7 @@ SNAP_ARCH = amd64
 # makefile
 .DEFAULT_GOAL := install
 # environment
-SYSTEMD_EXEC_PID = 1211
+SYSTEMD_EXEC_PID = 1215
 # environment
 DISPLAY = :0
 # environment
@@ -257,9 +257,9 @@ SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd
 
 # Directories
 
-# . (device 2052, inode 8654255): 13 files, no impossibilities.
+# . (device 2052, inode 8654255): 14 files, no impossibilities.
 
-# 13 files, no impossibilities in 1 directories.
+# 14 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -284,7 +284,7 @@ lint:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-06 21:35:56.856765908
+#  Last modified 2022-06-06 22:50:25.674291602
 #  File has been updated.
 #  Successfully updated.
 
@@ -300,6 +300,7 @@ all:
 #  Implicit rule search has been done.
 #  File does not exist.
 #  File has not been updated.
+ 
 
 publish:
 #  Implicit rule search has not been done.
@@ -323,12 +324,12 @@ install:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 22 / storage = 197 B / avg = 8 B
-# current buf: size = 8162 B / used = 197 B / count = 22 / avg = 8 B
+# strcache buffers: 1 (0) / strings = 23 / storage = 210 B / avg = 9 B
+# current buf: size = 8162 B / used = 210 B / count = 23 / avg = 9 B
 
-# strcache performance: lookups = 30 / hit rate = 26%
+# strcache performance: lookups = 31 / hit rate = 25%
 # hash-table stats:
-# Load=22/8192=0%, Rehash=0, Collisions=0/30=0%
-# Finished Make data base on Mon Jun  6 21:36:05 2022
+# Load=23/8192=0%, Rehash=0, Collisions=0/31=0%
+# Finished Make data base on Tue Jun  7 18:11:42 2022
 
  
