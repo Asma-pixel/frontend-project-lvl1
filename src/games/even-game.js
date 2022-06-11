@@ -4,12 +4,9 @@ import getRandomNumber from '../randomNumber.js';
 const isEven = (number) => number % 2 === 0;
 
 const getQuestionWithAnswer = () => {
-  const arrQuestionAnswer = [2];
-  const num = getRandomNumber();
-  arrQuestionAnswer[0] = num;
-  const expectedAnswer = isEven(num) ? 'yes' : 'no';
-  arrQuestionAnswer[1] = expectedAnswer;
-  return arrQuestionAnswer;
+  const question = getRandomNumber();
+  const answer = isEven(question) ? 'yes' : 'no';
+  return [question, answer];
 };
 
 const runEvenGame = () => {

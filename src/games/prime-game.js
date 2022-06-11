@@ -15,13 +15,10 @@ const isPrime = (num) => {
 };
 
 const getQuestionWithAnswer = () => {
-  const arrQuestionAnswer = [2];
-  const question = getRandomNumber() + 1;
-  arrQuestionAnswer[0] = question;
-
+  const question = getRandomNumber();
   const answer = isPrime(question) ? 'yes' : 'no';
-  arrQuestionAnswer[1] = answer.toString();
-  return arrQuestionAnswer;
+
+  return [question, answer];
 };
 const runPrimeGame = () => {
   const description = 'Answer "yes" if given number is prime. Otherwise answer "no"';

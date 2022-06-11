@@ -12,16 +12,14 @@ const getAnswer = (a, b) => {
     }
   }
   const result = firstNumber + secondNumber;
-  return result.toString();
+  return result;
 };
 const getQuestionWithAnswer = () => {
-  const arrQuestionAnswer = [2];
   const firstNumber = getRandomNumber();
   const secondNumber = getRandomNumber();
   const question = `${firstNumber} ${secondNumber}`;
-  arrQuestionAnswer[0] = question;
-  arrQuestionAnswer[1] = getAnswer(firstNumber, secondNumber);
-  return arrQuestionAnswer;
+  const answer = getAnswer(firstNumber, secondNumber).toString();
+  return [question, answer];
 };
 const runGcdGame = () => {
   const description = 'Find the greatest common divisor of given numbers.';

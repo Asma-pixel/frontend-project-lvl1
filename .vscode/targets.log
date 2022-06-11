@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Tue Jun  7 18:11:42 2022
+# Make data base, printed on Sat Jun 11 15:45:34 2022
 
 # Variables
 
@@ -23,7 +23,7 @@ SSH_AGENT_LAUNCHER = gnome-keyring
 # environment
 SNAP_INSTANCE_KEY = 
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-3d184b72-7ece-4d89-bd4b-a2b1c33d5057.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-10547af9-0f8d-4267-9036-e067057a23bf.sock
 # environment
 VSCODE_CWD = /home/seraphim/frontend-project-lvl1
 # default
@@ -35,7 +35,7 @@ QT_ACCESSIBILITY = 1
 # environment
 SNAP_INSTANCE_NAME = code
 # environment
-GDK_PIXBUF_MODULEDIR = /snap/code/97/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders
+GDK_PIXBUF_MODULEDIR = /snap/code/98/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # default
@@ -55,17 +55,17 @@ VSCODE_LOG_STACK = false
 # automatic
 %F = $(notdir $%)
 # environment
-VSCODE_CODE_CACHE_PATH = /home/seraphim/.config/Code/CachedData/c3511e6c69bb39013c4a4b7b9566ec1ca73fc4d5
+VSCODE_CODE_CACHE_PATH = /home/seraphim/.config/Code/CachedData/4af164ea3a06f701fe3e89a2bcbb421d2026b68f
 # environment
 LANG = C
 # environment
-XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.HCYZM1
+XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.S18JN1
 # default
 .LOADED := 
 # default
 .INCLUDE_DIRS = /usr/local/include /usr/include /usr/include
 # environment
-GNOME_TERMINAL_SERVICE = :1.158
+GNOME_TERMINAL_SERVICE = :1.179
 # makefile
 MAKEFLAGS = pqrR
 # makefile
@@ -73,7 +73,7 @@ CURDIR := /home/seraphim/frontend-project-lvl1
 # environment
 VSCODE_PIPE_LOGGING = true
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # environment
 LESSOPEN = | /usr/bin/lesspipe %s
 # automatic
@@ -101,13 +101,13 @@ SNAP_REEXEC =
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 3590
+VSCODE_PID = 6317
 # environment
 XDG_SESSION_TYPE = wayland
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # environment
-SESSION_MANAGER = local/seraphim-MS-7B24:@/tmp/.ICE-unix/1183,unix/seraphim-MS-7B24:/tmp/.ICE-unix/1183
+SESSION_MANAGER = local/seraphim-MS-7B24:@/tmp/.ICE-unix/1194,unix/seraphim-MS-7B24:/tmp/.ICE-unix/1194
 # automatic
 *F = $(notdir $*)
 # environment
@@ -117,7 +117,7 @@ DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
 # automatic
 <D = $(patsubst %/,%,$(dir $<))
 # environment
-VSCODE_NLS_CONFIG = {"locale":"ru","availableLanguages":{"*":"ru"},"_languagePackId":"6c87e287770fa80b3245e0a037b935fb.ru","_translationsConfigFile":"/home/seraphim/.config/Code/clp/6c87e287770fa80b3245e0a037b935fb.ru/tcf.json","_cacheRoot":"/home/seraphim/.config/Code/clp/6c87e287770fa80b3245e0a037b935fb.ru","_resolvedLanguagePackCoreLocation":"/home/seraphim/.config/Code/clp/6c87e287770fa80b3245e0a037b935fb.ru/c3511e6c69bb39013c4a4b7b9566ec1ca73fc4d5","_corruptedFile":"/home/seraphim/.config/Code/clp/6c87e287770fa80b3245e0a037b935fb.ru/corrupted.info","_languagePackSupport":true}
+VSCODE_NLS_CONFIG = {"locale":"ru","availableLanguages":{"*":"ru"},"_languagePackId":"6c87e287770fa80b3245e0a037b935fb.ru","_translationsConfigFile":"/home/seraphim/.config/Code/clp/6c87e287770fa80b3245e0a037b935fb.ru/tcf.json","_cacheRoot":"/home/seraphim/.config/Code/clp/6c87e287770fa80b3245e0a037b935fb.ru","_resolvedLanguagePackCoreLocation":"/home/seraphim/.config/Code/clp/6c87e287770fa80b3245e0a037b935fb.ru/4af164ea3a06f701fe3e89a2bcbb421d2026b68f","_corruptedFile":"/home/seraphim/.config/Code/clp/6c87e287770fa80b3245e0a037b935fb.ru/corrupted.info","_languagePackSupport":true}
 # default
 MAKE_HOST := x86_64-pc-linux-gnu
 # environment
@@ -131,7 +131,7 @@ XMODIFIERS = @im=ibus
 # environment
 SHLVL = 1
 # environment
-GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/f4097ca9_0316_47dd_ab4c_87d11bb07a3f
+GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/a1e172a4_6b38_4043_8abc_79356ecdb2c5
 # environment
 MAKELEVEL := 0
 # default
@@ -147,9 +147,9 @@ MAKEFILES :=
 # environment
 SNAP_USER_COMMON = /home/seraphim/snap/code/common
 # environment
-SNAP = /snap/code/97
+SNAP = /snap/code/98
 # environment
-SNAP_REVISION = 97
+SNAP_REVISION = 98
 # environment
 SNAP_REAL_HOME = /home/seraphim
 # environment
@@ -181,7 +181,7 @@ SNAP_ARCH = amd64
 # makefile
 .DEFAULT_GOAL := install
 # environment
-SYSTEMD_EXEC_PID = 1215
+SYSTEMD_EXEC_PID = 1235
 # environment
 DISPLAY = :0
 # environment
@@ -193,7 +193,7 @@ MAKE_VERSION := 4.3
 # environment
 DISABLE_WAYLAND = 1
 # environment
-SNAP_DATA = /var/snap/code/97
+SNAP_DATA = /var/snap/code/98
 # environment
 SNAP_CONTEXT = c9LimEEd-LBp4JJEpX5y0ClFSrI3ca84gCeI7ZLZAHC6ucRBC25C
 # environment
@@ -213,13 +213,13 @@ QT_IM_MODULE = ibus
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-VSCODE_IPC_HOOK = /run/user/1000/vscode-b113fb9c-1.67.2-main.sock
+VSCODE_IPC_HOOK = /run/user/1000/vscode-b113fb9c-1.68.0-main.sock
 # environment
 TERM = xterm-256color
 # environment
 SNAP_NAME = code
 # environment
-GSETTINGS_SCHEMA_DIR = /snap/code/97/usr/share/glib-2.0/schemas
+GSETTINGS_SCHEMA_DIR = /snap/code/98/usr/share/glib-2.0/schemas
 # environment
 IM_CONFIG_PHASE = 1
 # default
@@ -227,7 +227,7 @@ IM_CONFIG_PHASE = 1
 # automatic
 <F = $(notdir $<)
 # environment
-SNAP_VERSION = c3511e6c
+SNAP_VERSION = 4af164ea
 # default
 SUFFIXES := 
 # environment
@@ -241,7 +241,7 @@ SNAP_COMMON = /var/snap/code/common
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink load
 # environment
-SNAP_USER_DATA = /home/seraphim/snap/code/97
+SNAP_USER_DATA = /home/seraphim/snap/code/98
 # environment
 XDG_MENU_PREFIX = gnome-
 # environment
@@ -284,7 +284,7 @@ lint:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-06 22:50:25.674291602
+#  Last modified 2022-06-07 19:03:40.593173688
 #  File has been updated.
 #  Successfully updated.
 
@@ -330,6 +330,6 @@ install:
 # strcache performance: lookups = 31 / hit rate = 25%
 # hash-table stats:
 # Load=23/8192=0%, Rehash=0, Collisions=0/31=0%
-# Finished Make data base on Tue Jun  7 18:11:42 2022
+# Finished Make data base on Sat Jun 11 15:45:34 2022
 
  

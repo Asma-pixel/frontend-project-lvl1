@@ -2,25 +2,12 @@ import runGameLogics from '../index.js';
 import getRandomNumber from '../randomNumber.js';
 
 const getRandomOperator = () => {
-  const minNumber = 1;
-  const maxNummber = 3;
+  const minNumber = 0;
+  const maxNummber = 2;
 
   const operatorQualifier = getRandomNumber(minNumber, maxNummber);
-  console.log(operatorQualifier);
-  let operator = '';
-  switch (operatorQualifier) {
-    case 1:
-      operator = '+';
-      break;
-    case 2:
-      operator = '-';
-      break;
-    case 3:
-      operator = '*';
-      break;
-    default:
-      break;
-  }
+  const operators = ['+', '-', '*'];
+  const operator = operators[operatorQualifier];
 
   return operator;
 };
@@ -28,13 +15,13 @@ const getAnswer = (firstNumber, secondNumber, operator) => {
   let answer = '';
   switch (operator) {
     case '+':
-      answer = (firstNumber + secondNumber).toString();
+      answer = firstNumber + secondNumber;
       break;
     case '-':
-      answer = (firstNumber - secondNumber).toString();
+      answer = firstNumber - secondNumber;
       break;
     case '*':
-      answer = (firstNumber * secondNumber).toString();
+      answer = firstNumber * secondNumber;
       break;
     default:
       break;
@@ -43,16 +30,14 @@ const getAnswer = (firstNumber, secondNumber, operator) => {
 };
 
 const getQuestionWithAnswer = () => {
-  const arrQuestionAnswer = [2];
   const firstNumber = getRandomNumber();
   const secondNumber = getRandomNumber();
   const operator = getRandomOperator();
   const expression = `${firstNumber} ${operator} ${secondNumber}`;
 
-  arrQuestionAnswer[0] = expression;
-  arrQuestionAnswer[1] = getAnswer(firstNumber, secondNumber, operator);
+  const result = getAnswer(firstNumber, secondNumber, operator).toString();
 
-  return arrQuestionAnswer;
+  return [expression, result];
 };
 
 const runCalcGame = () => {
