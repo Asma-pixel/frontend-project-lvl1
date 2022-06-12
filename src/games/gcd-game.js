@@ -1,7 +1,7 @@
 import runGameLogics from '../index.js';
 import getRandomNumber from '../randomNumber.js';
 
-const getAnswer = (a, b) => {
+const calcGsd = (a, b) => {
   let firstNumber = a;
   let secondNumber = b;
   while (firstNumber !== 0 && secondNumber !== 0) {
@@ -18,7 +18,7 @@ const getQuestionWithAnswer = () => {
   const firstNumber = getRandomNumber();
   const secondNumber = getRandomNumber();
   const question = `${firstNumber} ${secondNumber}`;
-  const answer = getAnswer(firstNumber, secondNumber).toString();
+  const answer = calcGsd(firstNumber, secondNumber).toString();
   return [question, answer];
 };
 const runGcdGame = () => {

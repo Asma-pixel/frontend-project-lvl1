@@ -1,41 +1,38 @@
 import runGameLogics from '../index.js';
 import getRandomNumber from '../randomNumber.js';
 
-const getRandomOperator = () => {
-  const minNumber = 0;
-  const maxNummber = 2;
-
-  const operatorQualifier = getRandomNumber(minNumber, maxNummber);
-  const operators = ['+', '-', '*'];
-  const operator = operators[operatorQualifier];
-
-  return operator;
-};
-const getAnswer = (firstNumber, secondNumber, operator) => {
-  let answer = '';
+const calcExpression = (firstNumber, secondNumber, operator) => {
+  let result;
   switch (operator) {
     case '+':
-      answer = firstNumber + secondNumber;
+      result = firstNumber + secondNumber;
       break;
     case '-':
-      answer = firstNumber - secondNumber;
+      result = firstNumber - secondNumber;
       break;
     case '*':
-      answer = firstNumber * secondNumber;
+      result = firstNumber * secondNumber;
       break;
     default:
       break;
   }
-  return answer;
+  return result;
 };
 
 const getQuestionWithAnswer = () => {
   const firstNumber = getRandomNumber();
   const secondNumber = getRandomNumber();
-  const operator = getRandomOperator();
+
+  const indexFirstOperator = 0;
+  const indexLastOperator = 2;
+
+  const operatorQualifier = getRandomNumber(indexFirstOperator, indexLastOperator);
+  const operators = ['+', '-', '*'];
+  const operator = operators[operatorQualifier];
+
   const expression = `${firstNumber} ${operator} ${secondNumber}`;
 
-  const result = getAnswer(firstNumber, secondNumber, operator).toString();
+  const result = calcExpression(firstNumber, secondNumber, operator).toString();
 
   return [expression, result];
 };

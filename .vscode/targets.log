@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sat Jun 11 15:45:34 2022
+# Make data base, printed on Sun Jun 12 13:03:39 2022
 
 # Variables
 
@@ -23,7 +23,7 @@ SSH_AGENT_LAUNCHER = gnome-keyring
 # environment
 SNAP_INSTANCE_KEY = 
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-10547af9-0f8d-4267-9036-e067057a23bf.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-776948ec-0ec3-4eb7-a069-ac5aea0d0849.sock
 # environment
 VSCODE_CWD = /home/seraphim/frontend-project-lvl1
 # default
@@ -59,13 +59,13 @@ VSCODE_CODE_CACHE_PATH = /home/seraphim/.config/Code/CachedData/4af164ea3a06f701
 # environment
 LANG = C
 # environment
-XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.S18JN1
+XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.1K9TN1
 # default
 .LOADED := 
 # default
 .INCLUDE_DIRS = /usr/local/include /usr/include /usr/include
 # environment
-GNOME_TERMINAL_SERVICE = :1.179
+GNOME_TERMINAL_SERVICE = :1.159
 # makefile
 MAKEFLAGS = pqrR
 # makefile
@@ -101,13 +101,13 @@ SNAP_REEXEC =
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 6317
+VSCODE_PID = 4116
 # environment
 XDG_SESSION_TYPE = wayland
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # environment
-SESSION_MANAGER = local/seraphim-MS-7B24:@/tmp/.ICE-unix/1194,unix/seraphim-MS-7B24:/tmp/.ICE-unix/1194
+SESSION_MANAGER = local/seraphim-MS-7B24:@/tmp/.ICE-unix/1173,unix/seraphim-MS-7B24:/tmp/.ICE-unix/1173
 # automatic
 *F = $(notdir $*)
 # environment
@@ -117,7 +117,7 @@ DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
 # automatic
 <D = $(patsubst %/,%,$(dir $<))
 # environment
-VSCODE_NLS_CONFIG = {"locale":"ru","availableLanguages":{"*":"ru"},"_languagePackId":"6c87e287770fa80b3245e0a037b935fb.ru","_translationsConfigFile":"/home/seraphim/.config/Code/clp/6c87e287770fa80b3245e0a037b935fb.ru/tcf.json","_cacheRoot":"/home/seraphim/.config/Code/clp/6c87e287770fa80b3245e0a037b935fb.ru","_resolvedLanguagePackCoreLocation":"/home/seraphim/.config/Code/clp/6c87e287770fa80b3245e0a037b935fb.ru/4af164ea3a06f701fe3e89a2bcbb421d2026b68f","_corruptedFile":"/home/seraphim/.config/Code/clp/6c87e287770fa80b3245e0a037b935fb.ru/corrupted.info","_languagePackSupport":true}
+VSCODE_NLS_CONFIG = {"locale":"ru","availableLanguages":{"*":"ru"},"_languagePackId":"4925769db4f0ab8414eb31b4dea596f7.ru","_translationsConfigFile":"/home/seraphim/.config/Code/clp/4925769db4f0ab8414eb31b4dea596f7.ru/tcf.json","_cacheRoot":"/home/seraphim/.config/Code/clp/4925769db4f0ab8414eb31b4dea596f7.ru","_resolvedLanguagePackCoreLocation":"/home/seraphim/.config/Code/clp/4925769db4f0ab8414eb31b4dea596f7.ru/4af164ea3a06f701fe3e89a2bcbb421d2026b68f","_corruptedFile":"/home/seraphim/.config/Code/clp/4925769db4f0ab8414eb31b4dea596f7.ru/corrupted.info","_languagePackSupport":true}
 # default
 MAKE_HOST := x86_64-pc-linux-gnu
 # environment
@@ -131,7 +131,7 @@ XMODIFIERS = @im=ibus
 # environment
 SHLVL = 1
 # environment
-GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/a1e172a4_6b38_4043_8abc_79356ecdb2c5
+GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/b4bbf224_c7e0_4356_bcd7_2bcdfd857c92
 # environment
 MAKELEVEL := 0
 # default
@@ -181,7 +181,7 @@ SNAP_ARCH = amd64
 # makefile
 .DEFAULT_GOAL := install
 # environment
-SYSTEMD_EXEC_PID = 1235
+SYSTEMD_EXEC_PID = 1203
 # environment
 DISPLAY = :0
 # environment
@@ -275,16 +275,17 @@ brain-games:
 	node bin/brain-games.js
 
 lint:
+ 
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 8):
-	npx eslint .
+	npx eslint  .
 
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-07 19:03:40.593173688
+#  Last modified 2022-06-11 16:47:34.530908869
 #  File has been updated.
 #  Successfully updated.
 
@@ -300,7 +301,6 @@ all:
 #  Implicit rule search has been done.
 #  File does not exist.
 #  File has not been updated.
- 
 
 publish:
 #  Implicit rule search has not been done.
@@ -330,6 +330,6 @@ install:
 # strcache performance: lookups = 31 / hit rate = 25%
 # hash-table stats:
 # Load=23/8192=0%, Rehash=0, Collisions=0/31=0%
-# Finished Make data base on Sat Jun 11 15:45:34 2022
+# Finished Make data base on Sun Jun 12 13:03:39 2022
 
  
