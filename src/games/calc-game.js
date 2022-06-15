@@ -23,15 +23,11 @@ const getQuestionWithAnswer = () => {
   const firstNumber = getRandomNumber();
   const secondNumber = getRandomNumber();
 
-  const indexFirstOperator = 0;
-  const indexLastOperator = 2;
-
-  const operatorQualifier = getRandomNumber(indexFirstOperator, indexLastOperator);
   const operators = ['+', '-', '*'];
+  const operatorQualifier = getRandomNumber(0, operators.length - 1);
   const operator = operators[operatorQualifier];
 
   const expression = `${firstNumber} ${operator} ${secondNumber}`;
-
   const result = calcExpression(firstNumber, secondNumber, operator).toString();
 
   return [expression, result];
