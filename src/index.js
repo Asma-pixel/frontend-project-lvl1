@@ -7,7 +7,7 @@ const runGameLogics = (getQuestionWithAnswer, description) => {
   console.log(description);
   const roundsCount = 3;
   for (let i = 0; i < roundsCount; i += 1) {
-    const [question, rightAnswer] =  getQuestionWithAnswer();
+    const [question, rightAnswer] = getQuestionWithAnswer();
 
     console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');
